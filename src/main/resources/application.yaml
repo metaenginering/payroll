@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: payroll
+
+  # ===== Database ====
+  datasource:
+    url: jdbc:postgresql://localhost:5432/programming-payroll
+    username: root
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    hikari:             # connection pool configuration
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 30000
